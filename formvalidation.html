@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-6 offset-md-3 mt-4 p-3 shadow-lg">
+            <h2 class="text-center text-muted">Register Form</h2>
+            <form action="" onsubmit="return validForm()">
+                <div class="mb-3">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" class="form-control" id="firstname" onkeyup="firstnameValidate()">
+                    <span id="fnamemsg"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" class="form-control" id="lastname" onkeyup="lastnameValidate()">
+                    <span id="lnamemsg"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" onkeyup="emailValidate()">
+                    <span id="emailmsg"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" onkeyup="passwordValidate()">
+                    <span id="passmsg"></span>
+                </div>
+                <input type="submit" name="submit" class="btn btn-primary" value="Register">
+            </form>
+
+        </div>
+    </div>
+
+    <script src="formvalidation.js"></script>
+
+</body>
+</html>

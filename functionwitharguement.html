@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function with arguement</title>
+</head>
+<body>
+    
+<script>
+// defining the function
+
+const myDemo=(first_arg,second_arg)=>{
+    return  first_arg*second_arg
+}
+
+//defining with only one arguement
+
+const myFunction=abc=>(
+    document.write(abc + ' people')
+ )
+
+
+//call the function
+const a=myDemo(10,20)
+document.write(`${a}`)
+document.write('<br>')
+
+const b=myDemo(5,4)
+document.write(`${b}`)
+document.write('<br>')
+
+
+// function call with only one arguement
+
+  myFunction('hello')
+
+
+</script>
+
+</body>
+</html>

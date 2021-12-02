@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <p>collection of homogenous data or multiple values in the variable</p>
+    <script>
+        const fruits=['mango','orange','papaya','apple','kiwi']
+        document.write(`${fruits} <br>`)
+        document.write(fruits[0])
+        document.write('<br>')
+        // count the length of array
+        document.write(fruits.length)
+        document.write('<br>')
+        //pop method removes last element from array
+        fruits.pop()
+        document.write(`${fruits} <br>`)
+        //push method add last array element
+        fruits.push('cherry')
+        document.write(`${fruits} <br>`)
+        // shift method removes first element from array
+        fruits.shift()
+        document.write(`${fruits} <br>`)
+        // unshift
+        fruits.unshift('banana')
+        document.write(`${fruits} <br>`)
+        //splice()
+        fruits.splice(3,0,"lemon","grapes")
+        // 3 is position from where an element is started to add
+        // 0 no any array element is removed
+        document.write(`${fruits} <br>`)
+
+        //slice
+
+        //sort -> ascending order
+        fruits.sort()
+        document.write(`${fruits} <br>`)
+        //reverse ->reverse an array value
+        fruits.reverse()
+        document.write(`${fruits} <br>`)
+
+
+
+
+        
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
